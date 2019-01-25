@@ -1,0 +1,67 @@
+body{
+    background-color: rgba(5, 68, 47, 0.801);
+}
+
+#wraper{
+    width: 970px;
+    
+    margin: 0px auto;
+    padding: 10px;
+}
+
+#header{
+    background-color: tomato;
+    padding: 15px;
+    border-radius: 10px;
+    /* margin: 5px; */
+}
+
+#bannertext{
+    color: aliceblue;
+}
+
+#nav-menu{
+    background-color: aquamarine;
+    border-radius: 8px;
+    width: 210px;
+    margin-top: 10px;
+    padding: 3px;
+    display: inline-block;
+    vertical-align: top;
+}
+
+#maincontent{
+    background-color: rgb(30, 31, 39);
+    border-radius: 8px;
+    width: 730px;
+    display: inline-block;
+    margin: 10px;
+}
+p{
+    color: whitesmoke;
+    /* width: 710px; */
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+h2{
+    color: whitesmoke;
+    margin-left: 10px;
+}
+
+#footer{
+    background-color: aquamarine;
+    border-radius: 8px;
+    padding: 10px;
+}
+a{
+    color: rgb(8, 57, 163);
+}
+
+ul li{
+    color: brown;
+}
+
+#highlight{
+    color:yellowgreen;
+}

@@ -1,0 +1,10 @@
+function shiftleft(banana){
+  for(var i=0;i<banana.length-1; i++){
+    banana[i]=banana[i+1];
+  }
+  banana[banana.length-1]=0;
+  console.log(banana);
+}
+
+var tuan = [11,12,13,15,16,17];
+shiftleft(tuan);
