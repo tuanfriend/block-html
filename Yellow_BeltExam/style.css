@@ -1,0 +1,149 @@
+*{
+    vertical-align: top;
+    /* outline: 1px yellow solid; */
+    background-color: #000000;
+    text-decoration: none;
+
+}
+#wrapper{
+    width: 970px;
+    margin: 0px auto;
+    background-color: #1A1A1A;
+    padding: 5px;
+}
+body{
+    
+    color: beige;
+}
+b{
+    display: inline-block;
+    margin-top: 30px;
+    margin-left: 488px;
+    background-color: #1A1A1A;
+}
+
+img{
+    width: 300px;
+}
+ul{
+    
+    background-color: #515151;
+    padding: 0px;
+    margin: 0px;    
+}
+a{
+    background-color: #515151;
+    color: beige;
+}
+li{
+    
+    display: inline-block;
+    padding: 10px;
+    font-weight: bold;
+    background-color: #515151;
+}
+#main_content{
+    width: 970px;
+    background-color: #1A1A1A;
+}
+#main_content img{
+    width: 100%;
+    
+}
+
+.features{
+    background-color: #1A1A1A;
+    color: beige;
+    width: 23%;
+    display: inline-block;
+    padding: 5px;
+    padding-top: 30px;
+    margin-left: 6px;
+}
+#main_content .features img{
+    width: 40px;
+    
+}
+
+.features p{
+    margin-left: 45px;
+    margin-top: 2px;
+    background-color: #1A1A1A;
+}
+
+h2{
+    
+    color:#EF7F2B;
+    display: inline;
+    background-color: #1A1A1A;
+}
+#buynow{
+    width: 970px;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+button{
+    
+    color: beige;
+    background-color: #F18F47;
+    padding: 15px 30px;
+     margin-top: 45px; 
+     margin-left: 45px;
+ 
+}
+#buynowdes{
+    width: 745px;
+    display: inline-block;
+    padding-left: 25px;
+}
+
+.portfolio{
+    background-color: #1A1A1A;
+    width: 970px;
+    display: inline-block;
+}
+
+.port-content{
+    background-color: #1A1A1A;
+    width: 21%;
+    display: inline-block;
+    padding: 16px;
+    margin-left: 1px;
+    
+}
+
+.port-content p{
+    background-color: #1A1A1A;
+}
+h3{
+    background-color: #1A1A1A;
+    color: #EF7F2B;
+}
+.portfolio a{
+    margin-left: 740px;
+}
+.portfolio img{
+    padding: 5px;
+    background-color: #363636;
+}
+.portfolio h2{
+    color: beige;
+    margin-left: 19px;
+    margin-bottom: 0px;
+    display: inline-block;
+}
+
+#viewall{
+    color: #EF7F2B;
+    font-style: italic;
+    background-color: #1A1A1A;
+    display: inline-block;
+    margin-top: 20px;
+}
+#backtop{
+    margin-left: 880px;
+    background-color: #1A1A1A;
+    font-size: 11pt;
+}
+
+

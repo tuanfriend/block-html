@@ -1,0 +1,174 @@
+function fib(num){
+  var a=[0,1];
+  for(var i=2; i<=num; i++)
+  {
+    a[i]=a[i-1]+a[i-2];
+  }
+  return a[num];
+}
+
+fib(3);
+==========================
+function makeItBig(arr){
+  for(var i=0;i<arr.length; i++){
+    if(arr[i]>0)
+    arr[i]='big';
+  }
+  return arr;
+}
+//Biggie Size
+==========================
+function lowhigh(arr){
+  var low=arr[0];
+  var high=arr[0];
+  for(var i=0;i<arr.length; i++){
+    if(low>arr[i]){
+      low=arr[i];
+    }
+    if(high<arr[i]){
+      high=arr[i];
+    }
+  }
+  console.log(low);
+  return high;
+}
+//Print Low, Return High
+============================
+function printone(a){
+
+  console.log(a[a.length-2]);
+  for(var i=0; i<a.length; i++){
+   
+    if(a[i]%2!==0){
+    return a[i];
+    }
+  } 
+}
+//Print One, Return Another
+===========================
+function double(a){
+
+for(var i=0;i<a.length;i++){
+  a[i]=a[i]*2;
+}
+return a;
+}
+//Double Vision
+==========================
+function countPositives(a){
+var count=0;
+for(var i=0;i<a.length;i++){
+  if(a[i]>=0)
+  count++;
+}
+a[a.length-1]=count;
+return a;
+}
+//Count Positives
+==========================
+function evenandodd(a){
+var counteven=0;
+var countodd=0;
+for(var i=0;i<a.length;i++){
+  if(a[i]%2===0){
+    counteven++;
+  }
+  if(a[i]%2!==0){
+    countodd++;
+  }
+}
+if(countodd>=3){
+  console.log('That is odd!');
+}
+if(counteven>=3){
+  console.log('Even more so!');
+}
+}
+//Evens and Odds
+=============================
+function addone(a){
+  for(var i=0; i<a.length; i++){
+    if(i%2!==0){
+      a[i]=a[i]+1;
+      
+    }
+    console.log(a[i]);
+  }
+  return a;
+}
+//Increment the Seconds
+=============================
+function prestring(a){
+  for(var i=a.length-1; i>0; i--){
+    a[i]=a[i-1].length;
+  }
+  console.log(a);
+}
+//Previous Lengths 
+=============================
+function addseven(a){
+  var newarr=[];
+  for(var i=0;i<a.length;i++){
+    newarr.push(a[i]+7);
+  }
+  return newarr;
+}
+//Add Seven to Most
+=============================
+function reverse(a){
+  var temp=0;
+  var mid = a.length / 2;
+  Math.floor(mid);
+  for(var i=0;i<mid;i++){
+    
+    temp=a[i];
+    a[i]=a[a.length-1-i];
+    a[a.length-1-i]=temp;
+  }
+  return a;
+}
+//Reverse Array
+=============================
+function outlook(a){
+  var newarr=[];
+  for(var i=0; i<a.length; i++){
+    if(a[i]>=0){
+      a[i]=a[i]*-1;
+    }
+    newarr.push(a[i]);
+    
+  }
+  return newarr;
+}
+//Outlook: Negative
+=============================
+function hungry(a){
+  var count=0;
+  for(var i=0; i<a.length; i++){
+    if(a[i]==='food'){
+      console.log('yummy');
+      count++;
+    }
+  }
+  if(count===0)
+  console.log('Im Hungry');
+}
+//Always Hungry
+============================
+function swaptoward(a){
+  var temp = a[0];
+  a[0]=a[a.length-1];
+  a[a.length-1] = temp;
+  var third = a[3];
+  a[3]=a[a.length-4];
+  a[a.length-4]= third;
+}
+//Swap Toward the Center
+============================
+function scale(a,n){
+for(var i=0;i<a.length;i++){
+  a[i]=a[i]*n;
+}
+return a;
+}
+//Scale the Array

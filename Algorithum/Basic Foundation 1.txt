@@ -1,0 +1,137 @@
+============================
+function a(){
+  var b=[];
+  for(var i=0; i<255; i++){
+    b.push(i+1);
+  }
+  return b;
+}
+a();
+//Get 1 to 255
+==============================
+function sumeven(){
+  var sum =0;
+  for(var i=0; i<=1000; i+=2){
+    sum = sum + i;
+  }
+  return sum;
+}
+//sum even 1000
+===============================
+function sumodd(){
+  var sum =0;
+  for(var i=1; i<=5000; i+=2){
+    sum = sum + i;
+  }
+  return sum;
+}
+//sum odd number till 5000
+===============================
+function sumarr(a){
+  var sum =0;
+  for(var i=0; i<a.length; i++){
+    sum = sum + a[i];
+  }
+  return sum;
+}
+//sum all value in array / Iterate an array
+==============================
+function maxarr(a){
+  var max=a[0];
+  for(var i=0; i<a.length; i++){
+    if(max<a[i])
+    max = a[i];
+  }
+  return max;
+}
+//Find max in array
+=============================
+function avgarr(a){
+  var sum=0;
+  for(var i=0; i<a.length; i++){
+    sum = sum + a[i];
+  }
+  var avg = sum / a.length;
+  return avg;
+}
+//Find average array
+=============================
+function arrodd(){
+  var odd=[];
+  for(var i=1; i<50; i+=2){
+    odd.push(i);
+  }
+  
+  return odd;
+}
+//Array all odd number
+=============================
+function greatery(arr,y){
+  var count=0;
+  for(var i=0; i<arr.length; i++){
+    if(arr[i]>y)
+    count++;
+  }
+  
+  return count;
+}
+//Greater than Y
+=============================
+function square(arr){
+  
+  for(var i=0; i<arr.length; i++){
+    arr[i] = arr[i]*arr[i];
+  }
+  return arr;
+}
+//Squares array value
+============================
+function nega(arr){
+  
+  for(var i=0; i<arr.length; i++){
+    if(arr[i]<0)
+    arr[i]=0;
+  }
+  return arr;
+}
+//Negatives to 0 in array
+=============================
+function mma(arr){
+  var max=arr[0];
+  var min=arr[0];
+  var sum=0;
+  for(var i=0; i<arr.length; i++){
+    if(max<arr[i]){
+    max=arr[i];
+    }
+    if(min>arr[i]){
+      min=arr[i];
+    }
+    sum = sum+arr[i];
+    
+  }
+  var avg= sum / arr.length;
+  var newarr=[max,min,avg];
+  return newarr;
+}
+//max,min,avg array
+==============================
+function swapvalue(arr){
+  var first=arr[0];
+    arr[0]=arr[arr.length-1];
+  arr[arr.length-1]=first;
+  if(arr.length>=2){
+    return arr;
+  }
+}
+//Swap Values
+=============================
+function negastring(arr){
+  
+  for(var i=0; i<arr.length; i++){
+    if(arr[i]<0)
+    arr[i]='Dojo';
+  }
+  return arr;
+}
+//Number to String
