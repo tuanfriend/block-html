@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pacman Game</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <div id='container'>
+        <div id='world'></div>
+        <div id='pacman'></div>
+    </div>
+    <script>
+        var world = [
+            [2, 2, 2, 2, 2, 2, 2, 2, 2, 2],
+            [2, 1, 1, 1, 1, 1, 1, 1, 1, 2],
+            [2, 1, 1, 1, 1, 1, 1, 1, 1, 2],
+            [2, 1, 1, 1, 1, 1, 1, 1, 1, 2],
+            [2, 1, 1, 1, 1, 1, 1, 2, 1, 2],
+            [2, 1, 1, 1, 1, 2, 2, 2, 1, 2],
+            [2, 1, 2, 2, 1, 2, 1, 1, 1, 2],
+            [2, 1, 1, 2, 2, 2, 1, 1, 1, 2],
+            [2, 2, 2, 2, 2, 2, 2, 2, 2, 2]
+        ];
+        var pacman = {
+            x: 20,
+            y: 20
+        };
+
+        function displayworld() {
+            var output = '';
+            for (var i = 0; i < world.length; i++) {
+                output += "\n<div class='row'>\n";
+                for (var j = 0; j < world[i].length; j++) {
+                    if (world[i][j] == 2)
+                        output += "<div class='brick'></div>";
+                    else if (world[i][j] == 1)
+                        output += "<div class='coin'></div>";
+                    if (world[i][j] == 0)
+                        output += "<div class='empty'></div>";
+                }
+                output += "\n</div>";
+            }
+            // console.log(output);
+            document.getElementById('world').innerHTML = output;
+        }
+
+        function displayPacman() {
+            document.getElementById('pacman').style.top = pacman.y + "px";
+            document.getElementById('pacman').style.left = pacman.x + "px";
+        }
+
+        displayworld();
+        displayPacman();
+
+        document.onkeydown = function (e) {
+
+            if (e.KeyCode == 37) {
+                pacman.x -= 20;
+            }
+            else if (e.KeyCode == 39) {
+                pacman.x += 20;
+            }
+            else if (e.KeyCode == 38) {
+                pacman.y -= 20;
+            }
+            
+            
+
+            displayPacman();
+        }
+
+
+    </script>
+
+</body>
+
+</html>
