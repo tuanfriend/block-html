@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,37 +9,79 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script>
-    $(document).ready(function() {
+        $(document).ready(function () {
+            $('#bt1').click(function () {
+                $('#part1 p').addClass("red");
+                $('#part1 h1').addClass("blue");
+            });
 
+            $('#bt2').click(function () {
+                $("img").slideToggle("slow");
+            });
+            $("#bt3").click(function () {
+                $("#part3 p").append("<p>This is what i want to add more, OK</p>");
+            });
+            $("#bt4").click(function () {
+                $("#part4 h1").fadeIn("slow");
+            });
+            $("#bt5").click(function () {
+                $("#part5 h1, #part5 p").show("slow");
+            });
 
+            $("#bt6").click(function () {
+                $("#part6 h1").slideDown("slow");
+            });
+            $("#bt6").click(function () {
+                $("#part6 p").slideUp("slow");
+            });
 
-    });
+        });
     </script>
 </head>
+
 <body>
-    
-        <button>Add Class</button>
-        <div id="part1">
-    <h1>AddClass</h1>
-    <p>Click the button to add class red to this pharagraph</p>
 
-</div>
+    <button id="bt1">Add Class</button>
+    <div id="part1">
+        <h1>AddClass</h1>
+        <p>Click the button to add class red to this pharagraph</p>
+
+    </div>
     <hr>
-    
-    <button>Slide Toggle</button>
+
+    <button id="bt2">Slide Toggle</button>
     <div id="part2">
-    <h1>SlideToggle</h1>
-    <p>Click the button to slide toggle to hide the image</p>
-    <img src="coding.png">
+        <h1>SlideToggle</h1>
+        <p>Click the button to slide toggle to hide the image</p>
+        <img src="coding.png">
 
-</div>
+    </div>
     <hr>
-    
-    <button>Append</button>
+
+    <button id="bt3">Append</button>
     <div id="part3">
-    <h1>Append Functions</h1>
-    <p>Click the button to append a new pharagraph</p>
-    
-</div>
+        <h1>Append Functions</h1>
+        <p>Click the button to append a new pharagraph</p>
+
+    </div>
+    <hr>
+    <button id="bt4">Fade In</button>
+    <div id="part4">
+        <h1 style="display:none">Fade In</h1>
+        <p>Click the button to append a new pharagraph</p>
+    </div>
+    <hr>
+    <button id="bt5">JQuery Show</button>
+    <div id="part5">
+        <h1 style="display:none">JQuery Show</h1>
+        <p style="display:none">Click the button to append a new pharagraph</p>
+    </div>
+    <hr>
+    <button id="bt6">Slide Down / Up</button>
+    <div id="part6">
+        <h1 style="display:none">Slide Down</h1>
+        <p>This will be slide Up hahaha</p>
+    </div>
 </body>
+
 </html>

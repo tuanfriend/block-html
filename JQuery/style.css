@@ -1,15 +1,30 @@
 
 body{
-    vertical-align: top;
+    
 }
+
 img{
     width: 300px;
 }
 button{
-    display: inline;
-    padding: 20px;
+    display: inline-block;
+    padding: 10px 20px;
     margin-right: 55px;
+    vertical-align: top;
+    
 }
 div, h1{
     display: inline-block;
+}
+.red{
+    color: red;
+}
+.blue{
+    color: rgb(7, 64, 219);
+}
+#part6 p{
+    background: #06e711;
+}
+#part6 h1{
+    background: #de9a44;
 }
